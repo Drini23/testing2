@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1> Hello</h1>
+<ul>
+    {% for item in movies %}
+        <li>
+            {{ item.title }}
+            <a href="{% url 'detail' item.id %}">Item</a>
+        </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

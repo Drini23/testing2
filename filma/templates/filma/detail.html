@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Movie Details</h1>
+    <div>
+        <h2>{{ movie.title }}</h2>
+        <p>Release Year: {{ movie.release_year }}</p>
+        <p>Number in Stock: {{ movie.number_in_stock }}</p>
+        <p>Daily Rate: {{ movie.daily_rate }}</p>
+        <p>Genre: {{ movie.genre }}</p>
+        <p>Date Created: {{ movie.date_created }}</p>
+    </div>
+    <hr>
+    <a href="{% url 'index' %}">Home</a>
+</body>
+</html>
